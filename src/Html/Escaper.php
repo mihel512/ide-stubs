@@ -232,9 +232,9 @@ class Escaper implements \Phalcon\Html\Escaper\EscaperInterface
      * ```
      *
      * @param int $flags
-     * @return Escaper
+     * @return EscaperInterface
      */
-    public function setFlags(int $flags): Escaper
+    public function setFlags(int $flags): EscaperInterface
     {
     }
 

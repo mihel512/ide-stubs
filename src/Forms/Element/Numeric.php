@@ -21,4 +21,5 @@ class Numeric extends \Phalcon\Forms\Element\AbstractElement
      * @var string
      */
     protected $method = 'inputNumeric';
+
 }

@@ -32,7 +32,7 @@ abstract class AbstractAdapter implements \Phalcon\Db\Adapter\AdapterInterface, 
      *
      * @var int
      */
-    protected static $connectionConsecutive = 0;
+    static protected $connectionConsecutive = 0;
 
     /**
      * Active connection ID

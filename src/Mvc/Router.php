@@ -461,9 +461,9 @@ class Router extends AbstractInjectionAware implements \Phalcon\Mvc\RouterInterf
     /**
      * Returns the route that matches the handled URI
      *
-     * @return RouteInterface
+     * @return RouteInterface|null
      */
-    public function getMatchedRoute(): RouteInterface
+    public function getMatchedRoute(): ?RouteInterface
     {
     }
 

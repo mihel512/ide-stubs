@@ -89,7 +89,7 @@ class Di implements \Phalcon\Di\DiInterface
      *
      * @var DiInterface|null
      */
-    protected static $_default;
+    static protected $_default;
 
     /**
      * Phalcon\Di\Di constructor

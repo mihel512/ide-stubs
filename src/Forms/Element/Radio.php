@@ -21,4 +21,5 @@ class Radio extends \Phalcon\Forms\Element\AbstractElement
      * @var string
      */
     protected $method = 'inputRadio';
+
 }

@@ -232,12 +232,31 @@ abstract class Model extends AbstractInjectionAware implements \Phalcon\Mvc\Enti
     }
 
     /**
+     * Serializes a model
+     *
+     * @return array
+     */
+    public function __serialize(): array
+    {
+    }
+
+    /**
      * Magic method to assign values to the the model
      *
      * @param mixed $value
      * @param string $property
      */
     public function __set(string $property, $value)
+    {
+    }
+
+    /**
+     * Unserializes an array to the model
+     *
+     * @param array $data
+     * @return void
+     */
+    public function __unserialize(array $data): void
     {
     }
 
@@ -1624,7 +1643,7 @@ abstract class Model extends AbstractInjectionAware implements \Phalcon\Mvc\Enti
      * @param string $method
      * @param array $arguments
      */
-    final protected static function invokeFinder(string $method, array $arguments)
+    protected final static function invokeFinder(string $method, array $arguments)
     {
     }
 
@@ -2199,21 +2218,6 @@ abstract class Model extends AbstractInjectionAware implements \Phalcon\Mvc\Enti
      * @return string
      */
     private static function caseInsensitiveColumnMap($columnMap, $key): string
-    {
-    }
-
-    /**
-     * @return array
-     */
-    public function __serialize(): array
-    {
-    }
-
-    /**
-     * @param array $data
-     * @return void
-     */
-    public function __unserialize(array $data): void
     {
     }
 }
